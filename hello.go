@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/binaryphile/hello-service/services/msgsvc"
+)
 
 func main() {
-	fmt.Println("Hello, world!")
+	fmt.Println(msgsvc.GetMessage())
 }
